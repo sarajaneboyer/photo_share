@@ -12,12 +12,12 @@ const Navbar = () => (
     </Link>
     <Link to="/all_items">
       <Menu.Item>
-        All Photos
+        All Items
       </Menu.Item>
     </Link>
     <Link to="/new_item">
       <Menu.Item>
-        Add New Photo
+        Add New Item
       </Menu.Item>
     </Link>
   </Menu>

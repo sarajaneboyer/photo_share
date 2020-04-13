@@ -1,12 +1,11 @@
 import React from 'react';
-import '../Home.css';
-import AllItems from './AllItems';    
+import '../Home.css';   
 
     
 const Home = () => (
     <div className="App">
-      <h1>Welcome to PhotoShare</h1>
-      <h3>The photo sharing website where you can see images, like images, and even upload your own images!</h3>
+      <h1>Welcome to ItemShare!</h1>
+      <h3>The sharing website where you can see images or posts and even upload your own!</h3>
     </div>
 );
 

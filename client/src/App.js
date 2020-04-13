@@ -17,7 +17,6 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/all_items" component={AllItems} />
         <Route exact path="/new_item" component={NewItemForm} />
-        // any path not specified above will go to the NoMatch page
         <Route component={NoMatch} />
       </Switch>
     </Container>
