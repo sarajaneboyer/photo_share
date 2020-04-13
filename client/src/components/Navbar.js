@@ -1,11 +1,26 @@
 import React from 'react';
+import { Link, } from 'react-router-dom';
+import { Menu, } from 'semantic-ui-react';
 
-const Navbar = () => {
-  return(
-    <>
-      Navbar
-    </>
-  )
-}
+// using an implicit return
+const Navbar = () => (
+  <Menu>
+    <Link to="/">
+      <Menu.Item>
+        Home
+      </Menu.Item>
+    </Link>
+    <Link to="/all_items">
+      <Menu.Item>
+        All Photos
+      </Menu.Item>
+    </Link>
+    <Link to="/new_item">
+      <Menu.Item>
+        Add New Photo
+      </Menu.Item>
+    </Link>
+  </Menu>
+);
 
 export default Navbar;
