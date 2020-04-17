@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This website is a user friendly content-sharing website where you can share titled posts with original content, including images.  Users can not only view these posts, but also create new content via the "All Items" page. Each post has "likes" associated with it and the posts can be sorted by those likes in either ascending or descending order. 
