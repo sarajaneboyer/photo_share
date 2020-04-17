@@ -4,7 +4,7 @@ import { Menu, } from 'semantic-ui-react';
 
 // using an implicit return
 const Navbar = () => (
-  <Menu>
+  <Menu style={styles.navbar}>
     <Link to="/">
       <Menu.Item>
         Home
@@ -12,20 +12,17 @@ const Navbar = () => (
     </Link>
     <Link to="/all_items">
       <Menu.Item>
-        All Items
+        All Posts
       </Menu.Item>
     </Link>
-    {/* <Link to="/items/descending">
-      <Menu.Item>
-        View Most Liked Items
-      </Menu.Item>
-    </Link>
-    <Link to="/items/ascending">
-      <Menu.Item>
-        View Least Liked Items
-      </Menu.Item>
-    </Link> */}
   </Menu>
 );
+
+const styles = {
+  navbar: {
+    backgroundColor: '#E8E9EE',
+  }
+}
+
 
 export default Navbar;

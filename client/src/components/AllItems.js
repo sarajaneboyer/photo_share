@@ -54,18 +54,19 @@ const AllItems = () => {
 
   return(
     <div>
-      <Button onClick={ () => setShowItemForm(!showItemForm)} color="pink">
-        {showItemForm ? "Cancel" : "Add New Item!"}
-      </Button>
-      <h3>Sort By:</h3>
-      <select onChange={ (e) => setSortType(e.target.value) }>
-      {/* <option disabled selected value> -- select an option -- </option> */}
-        <option value='default' defaultValue> -- Default View -- </option>
-        <option value='mostLiked'>Most Liked</option>
-        <option value='leastLiked'>Least Liked</option>
-      </select>
-        {showItemForm && <NewItemForm addItem={addItem} toggleForm={setShowItemForm} /> }
-        <Header as="h1" align="center">All Items</Header>
+      <div style={styles.headings}>
+        <Header as="h1">All Posts</Header>
+        <h3>Sort By:</h3>
+        <select onChange={ (e) => setSortType(e.target.value) } style={styles.select}>
+          <option value='default' defaultValue> -- Default View -- </option>
+          <option value='mostLiked'>Most Liked</option>
+          <option value='leastLiked'>Least Liked</option>
+        </select><br />
+        <Button onClick={ () => setShowItemForm(!showItemForm)} style={styles.button}>
+          {showItemForm ? "Cancel" : "Add New Item!"}
+        </Button>
+          {showItemForm && <NewItemForm addItem={addItem} toggleForm={setShowItemForm} /> }
+      </div>
       <div className="Posts">
         <Card.Group align="center" itemsPerRow={1}>
           {renderItems()}
@@ -74,6 +75,22 @@ const AllItems = () => {
     </div>
   )
 };
+
+const styles = {
+  button: {
+    backgroundColor: 'grey',
+    color: 'white',
+  },
+  headings: {
+    marginLeft: '150px',
+  },
+  select: {
+    display: 'block',
+    borderRadius: '10px',
+    padding: '10px',
+    margin: '10px',
+  }
+}
 
 
 export default AllItems;

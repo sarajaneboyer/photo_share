@@ -56,10 +56,17 @@ const NewItemForm = (props) => {
           value={likes}
           onChange={(e) => setLikes(e.target.value)}
         />
-        <Form.Button color="pink">Submit</Form.Button>
+        <Form.Button style={styles.submitButton}>Submit</Form.Button>
       </Form>
     </div>
   );
 };
 
+
+const styles={
+  submitButton: {
+    backgroundColor: 'lightpink',
+    color: 'white',
+  }
+}
 export default NewItemForm;

@@ -10,7 +10,7 @@ const Home = () => (
         <h3>The content-sharing website where you can see images or word-posts and even upload your own!</h3>
       </div>
       <div>
-        <Image src="https://thesavvycouple.com/wp-content/uploads/2018/09/Best-Stock-Photo-Sites.jpg" alt="person blogging on a rustic table with wild flowers" />
+        <Image style={styles.image} src="https://thesavvycouple.com/wp-content/uploads/2018/09/Best-Stock-Photo-Sites.jpg" alt="person blogging on a rustic table with wild flowers" />
       </div>
     </div>
 );
@@ -21,6 +21,11 @@ const styles = {
     backgroundColor: 'pink',
     borderRadius: '20px',
     padding: '20px',
+    width: '460px',
+  },
+  image: {
+    borderRadius: '10px',
+    boxShadow: '10px',
     width: '460px',
   }
 }
