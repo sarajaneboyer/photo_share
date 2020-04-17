@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaThumbsUp } from 'react-icons/fa';
 import { Card, Image, } from 'semantic-ui-react';
+import '../Home.css';   
 
 const ItemView = (props) => {
 

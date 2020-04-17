@@ -12,3 +12,9 @@
   padding: 40px;
 }
 
+.ui.card>.content.extra,
+.ui.cards>.card>.content.extra {
+  background-color: pink;
+  color: #616161;
+}
+
