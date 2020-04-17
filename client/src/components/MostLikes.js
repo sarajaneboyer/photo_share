@@ -1,6 +1,7 @@
 import React, {useState, useEffect, } from 'react';
 import axios from 'axios';
 import ItemView from './ItemView';
+import '../Home.css';   
 import { Card, Header, } from 'semantic-ui-react';
 
 const MostLikes = () => {
@@ -31,9 +32,11 @@ const MostLikes = () => {
     <div>
       <Header as="h1" align="center">All Items</Header>
       <h2 align="center">Sorted by Most Likes to Least Likes</h2>
-      <Card.Group align="center" itemsPerRow={3}>
-        {renderItems()}
-      </Card.Group>
+      <div className="Posts">
+        <Card.Group align="center" itemsPerRow={1}>
+          {renderItems()}
+        </Card.Group>
+      </div>
     </div>
   )
 };

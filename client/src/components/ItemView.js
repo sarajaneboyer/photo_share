@@ -5,7 +5,7 @@ const ItemView = (props) => {
 
   return (
     <>
-      <Card>
+      <Card color="pink">
         <Card.Content>
           <Image size="small" src={props.image} />
           <Card.Header>{props.name}</Card.Header>

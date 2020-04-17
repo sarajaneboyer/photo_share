@@ -56,7 +56,7 @@ const NewItemForm = (props) => {
           value={likes}
           onChange={(e) => setLikes(e.target.value)}
         />
-        <Form.Button>Submit</Form.Button>
+        <Form.Button color="pink">Submit</Form.Button>
       </Form>
     </div>
   );

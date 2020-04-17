@@ -33,17 +33,20 @@ const AllItems = () => {
 
   return(
     <div>
-      <Button onClick={ () => setShowItemForm(!showItemForm)}>
+      <Button onClick={ () => setShowItemForm(!showItemForm)} color="pink">
         {showItemForm ? "Cancel" : "Add New Item!"}
       </Button>
-      {showItemForm && <NewItemForm addItem={addItem} toggleForm={setShowItemForm} /> }
-      <Header as="h1" align="center">All Items</Header>
-      <Card.Group align="center" itemsPerRow={3}>
-        {renderItems()}
-      </Card.Group>
+        {showItemForm && <NewItemForm addItem={addItem} toggleForm={setShowItemForm} /> }
+        <Header as="h1" align="center">All Items</Header>
+      <div className="Posts">
+        <Card.Group align="center" itemsPerRow={1}>
+          {renderItems()}
+        </Card.Group>
+      </div>
     </div>
   )
 };
+
 
 export default AllItems;
 

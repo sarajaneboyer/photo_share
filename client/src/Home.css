@@ -5,3 +5,10 @@
   padding: 20px;
 }
 
+.Posts {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+}
+
