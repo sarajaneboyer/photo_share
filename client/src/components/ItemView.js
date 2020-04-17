@@ -7,7 +7,7 @@ const ItemView = (props) => {
     <>
       <Card color="pink">
         <Card.Content>
-          <Image size="small" src={props.image} />
+          <Image size="medium" src={props.image} />
           <Card.Header>{props.name}</Card.Header>
           <Card.Meta>{props.likes} likes</Card.Meta>
           <Card.Description>{props.description}</Card.Description>

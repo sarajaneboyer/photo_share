@@ -15,7 +15,7 @@ const Navbar = () => (
         All Items
       </Menu.Item>
     </Link>
-    <Link to="/items/descending">
+    {/* <Link to="/items/descending">
       <Menu.Item>
         View Most Liked Items
       </Menu.Item>
@@ -24,7 +24,7 @@ const Navbar = () => (
       <Menu.Item>
         View Least Liked Items
       </Menu.Item>
-    </Link>
+    </Link> */}
   </Menu>
 );
 
