@@ -20,6 +20,11 @@ const Navbar = () => (
         View Most Liked Items
       </Menu.Item>
     </Link>
+    <Link to="/items/ascending">
+      <Menu.Item>
+        View Least Liked Items
+      </Menu.Item>
+    </Link>
   </Menu>
 );
 

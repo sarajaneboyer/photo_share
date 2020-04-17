@@ -7,6 +7,8 @@ import NewItemForm from './components/NewItemForm';
 import NoMatch from './components/NoMatch';
 import Navbar from './components/Navbar';
 import MostLikes from './components/MostLikes';
+import LeastLikes from './components/LeastLikes';
+
 
 const App = () => (
   <>
@@ -17,8 +19,9 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/all_items" component={AllItems} />
-        <Route exact path="/items/new" component={NewItemForm} />
         <Route exact path="/items/descending" component={MostLikes} />
+        <Route exact path="/items/ascending" component={LeastLikes} />
+
         <Route component={NoMatch} />
       </Switch>
     </Container>
