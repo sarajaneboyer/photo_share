@@ -1,45 +1,51 @@
 import React from 'react';
+import styled from 'styled-components';
+import { FaThumbsUp } from 'react-icons/fa';
 import { Card, Image, } from 'semantic-ui-react';
 
 const ItemView = (props) => {
 
-  // return (
+  return (
+    <>
+      <Card color="pink">
+        <Card.Content>
+          <Image size="medium" src={props.image} />
+          <Card.Header>{props.name}</Card.Header>
+          <Card.Description>{props.description}</Card.Description>
+          <Card.Meta><FaThumbsUp />{props.likes} likes</Card.Meta>
+        </Card.Content>
+      </Card>
+    </>
+  )
+
+  // return(
   //   <>
-  //     <Card color="pink">
-  //       <Card.Content>
-  //         <Image size="medium" src={props.image} />
-  //         <Card.Header>{props.name}</Card.Header>
-  //         <Card.Meta>{props.likes} likes</Card.Meta>
-  //         <Card.Description>{props.description}</Card.Description>
-  //       </Card.Content>
-  //     </Card>
+  //     <div style={styles.postCard}>
+  //       <div style={styles.image}><img src={`${props.image}`}></img></div>
+  //       <div style={styles.name}>{props.name}</div>
+  //       <div style={styles.description}>{props.description}</div>
+  //     </div>
+  //     <div style={styles.likes}><FaThumbsUp />{props.likes} likes</div>
   //   </>
   // )
-
-  return(
-    <div style={styles.postCard}>
-      <div style={styles.image}><img src={`${props.image}`}></img></div>
-      <div style={styles.name}>{props.name}</div>
-      <div style={styles.likes}>{props.likes} likes</div>
-      <div style={styles.description}>{props.description}</div>
-    </div>
-  )
 };
 
 const styles = {
   postCard: {
-    borderRadius: '5px',
+    borderRadius: '10px',
     backgroundColor: 'pink',
     color: 'white',
-    margin: '15px',
+    margin: '15px 15px 0px 15px',
+    justifyContent: 'left',
   },
   image: {
-
+    padding: '8px'
   },
   name: {
-
+    fontWeight: '300'
   },
   likes: {
+    marginLeft: '20px',
     color: 'grey',
   },
   description: {
