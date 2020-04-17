@@ -1,37 +1,51 @@
 import React, { useState, useEffect, } from 'react';
 import axios from 'axios';
-import { Card,} from 'semantic-ui-react';
+import { Card, Button, Header, } from 'semantic-ui-react';
 import ItemView from './ItemView';
 import NewItemForm from './NewItemForm';
 import '../Home.css';
 
 const AllItems = () => {
   const [items, setItems] = useState([]);
+  const [showItemForm, setShowItemForm] = useState(false);
 
   useEffect( () => {
     axios.get('/api/items')
       .then( (res) => {
         setItems(res.data)
-        console.log(res.data)
       })
   }, []);
 
 
   const renderItems = () => {
-    return items.map( item => (
-      <ItemView key={item.id} {...item} />
-    ))
+    if(items.length === 0){
+      return "No Items"
+    } else {
+      return items.map( item => (
+        <ItemView key={item.id} {...item} />
+      ))
+    }
   };
 
+  const addItem = (item) => {
+    setItems([...items, item])
+  };
 
   return(
-    <div maxwidth='800px'>
-      <h1 align="center">All Items</h1>
+    <div>
+      <Button onClick={ () => setShowItemForm(!showItemForm)}>
+        {showItemForm ? "Cancel" : "Add New Item!"}
+      </Button>
+      {showItemForm && <NewItemForm addItem={addItem} toggleForm={setShowItemForm} /> }
+      <Header as="h1" align="center">All Items</Header>
       <Card.Group align="center" itemsPerRow={3}>
         {renderItems()}
       </Card.Group>
     </div>
   )
-}
+};
 
 export default AllItems;
+
+
+// items.sortBy(item.like)

@@ -15,9 +15,9 @@ const Navbar = () => (
         All Items
       </Menu.Item>
     </Link>
-    <Link to="/new_item">
+    <Link to="/items/descending">
       <Menu.Item>
-        Add New Item
+        View Most Liked Items
       </Menu.Item>
     </Link>
   </Menu>
