@@ -5,7 +5,6 @@ import { Card, Header, } from 'semantic-ui-react';
 
 const MostLikes = () => {
   const [items, setItems] = useState([]);
-  const [sortedItems, setSortedItems] = useState([]);
 
   useEffect( () => {
     axios

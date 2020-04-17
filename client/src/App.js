@@ -3,7 +3,6 @@ import { Route, Switch, } from 'react-router-dom';
 import { Container, } from 'semantic-ui-react';
 import Home from './components/Home';
 import AllItems from './components/AllItems';
-import NewItemForm from './components/NewItemForm';
 import NoMatch from './components/NoMatch';
 import Navbar from './components/Navbar';
 import MostLikes from './components/MostLikes';
