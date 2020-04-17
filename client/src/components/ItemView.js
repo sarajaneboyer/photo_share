@@ -12,8 +12,8 @@ const ItemView = (props) => {
           <Image size="medium" src={props.image} />
           <Card.Header>{props.name}</Card.Header>
           <Card.Description>{props.description}</Card.Description>
-          <Card.Meta><FaThumbsUp />{props.likes} likes</Card.Meta>
         </Card.Content>
+          <Card.Content extra><FaThumbsUp />{props.likes} likes</Card.Content>
       </Card>
     </>
   )
