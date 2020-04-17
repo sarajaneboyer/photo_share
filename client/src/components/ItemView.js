@@ -17,6 +17,7 @@ const ItemView = (props) => {
       </Card>
     </>
   )
+};
 
   // return(
   //   <>
@@ -28,30 +29,29 @@ const ItemView = (props) => {
   //     <div style={styles.likes}><FaThumbsUp />{props.likes} likes</div>
   //   </>
   // )
-};
 
-const styles = {
-  postCard: {
-    borderRadius: '10px',
-    backgroundColor: 'pink',
-    color: 'white',
-    margin: '15px 15px 0px 15px',
-    justifyContent: 'left',
-  },
-  image: {
-    padding: '8px'
-  },
-  name: {
-    fontWeight: '300'
-  },
-  likes: {
-    marginLeft: '20px',
-    color: 'grey',
-  },
-  description: {
+// const styles = {
+//   postCard: {
+//     borderRadius: '10px',
+//     backgroundColor: 'pink',
+//     color: 'white',
+//     margin: '15px 15px 0px 15px',
+//     justifyContent: 'left',
+//   },
+//   image: {
+//     padding: '8px'
+//   },
+//   name: {
+//     fontWeight: '300'
+//   },
+//   likes: {
+//     marginLeft: '20px',
+//     color: 'grey',
+//   },
+//   description: {
 
-  },
-};
+//   },
+// };
 
 export default ItemView;
 

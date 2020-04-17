@@ -59,8 +59,8 @@ const AllItems = () => {
         <h3>Sort By:</h3>
         <select onChange={ (e) => setSortType(e.target.value) } style={styles.select}>
           <option value='default' defaultValue> -- Default View -- </option>
-          <option value='mostLiked'>Most Liked</option>
-          <option value='leastLiked'>Least Liked</option>
+          <option value='mostLiked'>Likes - Most to Least</option>
+          <option value='leastLiked'>Likes - Least to Most</option>
         </select><br />
         <Button onClick={ () => setShowItemForm(!showItemForm)} style={styles.button}>
           {showItemForm ? "Cancel" : "Add New Item!"}
@@ -94,6 +94,3 @@ const styles = {
 
 
 export default AllItems;
-
-
-// items.sortBy(item.like)
